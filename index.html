@@ -1,61 +1,50 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta charset="utf-8">
-		<script src="js/jquery-2.2.4.js"></script>
-		<title>Capstone Project</title>
-		<link rel="css/stylesheet" href="jquery.mobile-1.4.5.css">
-		<script src="js/jquery.mobile-1.4.5.js"></script>
-	</head>
-	
-	<body>
-		<div data-role="page" id="home" data-theme="b">
-			<div data-role="header" align="center">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multi-page template</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="js/jquery-2.2.4.js"></script>
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+</head>
+
+<body>
+		<div data-role="page" id="home">
+			<div data-role="header">
 				<h1>Capstone Project</h1>
 			</div>
-			
-		<div data-role="content">
-			<p><a href="#pageTwo" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Family Login</a></p>
-			<p><a href="#pageThree" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Employee Login</a></p>
-		</div>
-		</div>
-		
-		<div data-role="page" id="pageTwo" data-theme="b">
-			<div data-role="header" align="center">
-				<h1>Family Login</h1>
+
+			<div role="main" class="ui-content">
+				<p><a href="#pageTwo" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Family Login</a></p>
+				<p><a href="#pageThree" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Employee Login</a></p>
 			</div>
-			
-		<div data-role="content">
-			<form>
-				E-mail Address:<br>
-				<input type="text" name="email"><br>
-				Password:<br>
-				<input type="text" name="password"><br>
-				Verification Code:<br>
-				<input type="text" name="vcode"><br>
-				<input type="submit" value="Submit">
-			</form>
+			<div data-role="footer">
+				<h4>Footer content</h4>
+			</div>
 		</div>
-		</div> 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+		<!-- <div data&#45;role="page" id="pageTwo" data&#45;theme="b"> -->
+		<!-- 	<div data&#45;role="header" align="center"> -->
+		<!-- 		<h1>Family Login</h1> -->
+		<!-- 	</div> -->
+    <!--  -->
+		<!-- 	<div role="main" class="ui&#45;content"> -->
+		<!-- 		<form> -->
+		<!-- 			E&#45;mail Address:<br> -->
+		<!-- 			<input type="text" name="email"><br> -->
+		<!-- 			Password:<br> -->
+		<!-- 			<input type="text" name="password"><br> -->
+		<!-- 			Verification Code:<br> -->
+		<!-- 			<input type="text" name="vcode"><br> -->
+		<!-- 			<input type="submit" value="Submit"> -->
+		<!-- 		</form> -->
+		<!-- 	</div> -->
+		<!-- </div> -->
+
 	</body>
 </html>
-	
+

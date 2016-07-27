@@ -16,15 +16,15 @@
 	<script src="js/jquery.mobile-1.4.5.js"></script>
 	<!--<script src="js/jquery.min.js"></script>-->
 	<script src="js/multiple-select.js"></script>
-	
+
 	<script>
-	    $(function() {
-	        $('#medicineList').change(function() {
-	            console.log($(this).val());
-	        }).multipleSelect({
-	            width: '150px'
-	        });
-	    });
+		$(function() {
+			$('#medicineList').change(function() {
+				console.log($(this).val());
+			}).multipleSelect({
+				width: '150px'
+			});
+		});
 	</script>
 </head>
 
@@ -48,7 +48,7 @@
 				<h1>Family Login </h1>
 				<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 			</div>
-			
+
 		<div data-role="content">
 			<form name="pfLogin">
 				E-mail Address:<br>
@@ -60,14 +60,14 @@
 				<p><a href="#pageFour" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Submit</a></p>
 			</form>
 		</div>
-		</div> 
-		
+		</div>
+
 		<div id="pageThree" data-role="page" data-theme="b">
 			<div data-role="header">
 				<h1>Employee Login </h1>
 				<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 			</div>
-			
+
 			<div data-role="content">
 				<form>
 					Employee Number:<br>
@@ -78,20 +78,20 @@
 				</form>
 			</div>
 			</div>
-			
+
 		<div id="pageFour" data-role="page" data-theme="b">
 			<div data-role="header">
 				<h1>Patient Information </h1>
 				<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 			</div>
 		</div>
-		
+
 		<div id="pageFive" data-role="page" data-theme="b">
 			<div data-role="header">
 				<h1>Patient Selection</h1>
 				<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 			</div>
-			
+
 			<div data-role="content">
 				<select>
 					<option value="patientOne">Patient One</option>
@@ -106,18 +106,18 @@
 					<option value="patientTen">Patient Ten</option>
 				</select>
 				<p><a href="#pageSix" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Submit</a></p>
-				
-				
+
+
 			</div>
 			</div>
-			
+
 			<div id="pageSix" data-role="page" data-theme="b">
 				<div data-role="header">
 					<h1>Form Page</h1>
 					<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 				</div>
-			
-			
+
+
 			<div data-role="content" style="height: 100%; overflow: visible;">
 			<form name="hiddenForm">
 				<select id="medicineList" name="medicineList[]" multiple="multiple">
@@ -133,7 +133,7 @@
 					<option value="10">Medicine10</option>
 				</select>
 				<br />
-				
+
 				Meal:<input type="text" name="meal"><br>
 				<!--<input type="radio" name="meal" value="Yes">Yes
 				<input type="radio" name="meal" value="No">No-->
@@ -159,7 +159,7 @@
 			</form>
 			<br />
 			<br />
-		</div>	
+		</div>
 		</div>
 	</body>
 </html>

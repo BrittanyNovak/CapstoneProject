@@ -9,7 +9,7 @@
 	<link href="css/multiple-select.css" rel="stylesheet" type="text/css" />
 	<!--was testing things please don't remove the commented lines for now-->
 	<!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">-->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<script src="js/jquery-2.2.4.js"></script>
 	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>-->
@@ -135,13 +135,23 @@
 				<br />
 				
 				Meal:<input type="text" name="meal"><br>
-				<input type="radio" name="meal" value="Yes">Yes
-				<input type="radio" name="meal" value="No">No
+				<!--<input type="radio" name="meal" value="Yes">Yes
+				<input type="radio" name="meal" value="No">No-->
+				<label for="flip-1">Has Eaten:</label>
+				<select name="flip-1" id="flip-1" data-role="slider">
+				<option value="off">Yes</option>
+				<option value="on">No</option>
+				</select> 
 				<br />
 				<br />
-				Showered:
-				<input type="radio" name="showered" value="Yes">Yes
-				<input type="radio" name="showered" value="No">No
+				
+				<!--<input type="radio" name="showered" value="Yes">Yes
+				<input type="radio" name="showered" value="No">No-->
+				<label for="flip-1">Showered:</label>
+				<select name="flip-1" id="flip-1" data-role="slider">
+				<option value="off">Yes</option>
+				<option value="on">No</option>
+</select> 
 				<br />
 				Comments:
 				<textarea rows="6" cols= "25"></textarea>

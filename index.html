@@ -24,6 +24,14 @@
 			}).multipleSelect({
 				width: '150px'
 			});
+
+			$.getJSON( "http://54.175.111.160/capstoneproject_testing/_design/patient/_view/name_list?callback=?", function( data ) {
+  			var items = [];
+  			$.each( data.rows, function( key, val ) {
+    			$( "#patientList" ).append("<option id='" + val.key + "'>" + val.value + "</option>" );
+  			});
+			});
+
 		});
 	</script>
 </head>
@@ -93,17 +101,7 @@
 			</div>
 
 			<div data-role="content">
-				<select>
-					<option value="patientOne">Patient One</option>
-					<option value="patientTwo">Patient Two</option>
-					<option value="patientThree">Patient Three</option>
-					<option value="patientFour">Patient Four</option>
-					<option value="patientFive">Patient Five</option>
-					<option value="patientSix">Patient Six</option>
-					<option value="patientSeven">Patient Seven</option>
-					<option value="patientEight">Patient Eight</option>
-					<option value="patientNine">Patient Nine</option>
-					<option value="patientTen">Patient Ten</option>
+				<select id="patientList">
 				</select>
 				<p><a href="#pageSix" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Submit</a></p>
 
@@ -141,17 +139,17 @@
 				<select name="flip-1" id="flip-1" data-role="slider">
 				<option value="off">Yes</option>
 				<option value="on">No</option>
-				</select> 
+				</select>
 				<br />
 				<br />
-				
+
 				<!--<input type="radio" name="showered" value="Yes">Yes
 				<input type="radio" name="showered" value="No">No-->
 				<label for="flip-1">Showered:</label>
 				<select name="flip-1" id="flip-1" data-role="slider">
 				<option value="off">Yes</option>
 				<option value="on">No</option>
-</select> 
+</select>
 				<br />
 				Comments:
 				<textarea rows="6" cols= "25"></textarea>

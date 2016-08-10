@@ -19,11 +19,11 @@
 	
 	<script>
 	    $(function() {
-			$('#medicineList').change(function() {
-				console.log($(this).val());
-			}).multipleSelect({
-				width: '150px'
-			});
+// 			$('#medicineList').change(function() {
+// 				console.log('logging stuff');
+// 			}).multipleSelect({
+// 				width: '150px'
+// 			});
 
 			$.getJSON( "http://54.175.111.160/capstoneproject_testing/_design/patient/_view/name_list?callback=?", function( data ) {
   			var items = [];
@@ -34,10 +34,9 @@
 //   			});
 			});
 			
-			$.getJSON( "http://54.175.111.160/capstoneproject_testing/_design/medication/_view/med_list?callback=?", function( data ) {
-			var items = [];
-				for(var i = 0; i<data.total_rows; i++){
-					$( "#medicineList" ).append("<option id='" + data.rows[i].key + "'>" + data.rows[i].value + "</option>" );
+			$.getJSON( "http://54.175.111.160/capstoneproject_testing/_design/medication/_view/med_list?callback=?", function( data2 ) {
+				for(var j = 0; j<data2.total_rows; j++){
+					$( "#medicineList" ).append("<option id='" + data2.rows[j].key + "'>" + data2.rows[j].value + "</option>" );
 				}
 			});
 		});
@@ -109,59 +108,24 @@
 			</div>
 			
 			<div data-role="content">
-				<select>
-					<option value="patientOne">Patient One</option>
-					<option value="patientTwo">Patient Two</option>
-					<option value="patientThree">Patient Three</option>
-					<option value="patientFour">Patient Four</option>
-					<option value="patientFive">Patient Five</option>
-					<option value="patientSix">Patient Six</option>
-					<option value="patientSeven">Patient Seven</option>
-					<option value="patientEight">Patient Eight</option>
-					<option value="patientNine">Patient Nine</option>
-					<option value="patientTen">Patient Ten</option>
-				</select>
+			<select id="patientList">
+			</select>
 				<p><a href="#pageSix" data-role="button" data-icon="arrow-r" data-transition="slide" data-iconpos="right">Submit</a></p>
-				
-				
 			</div>
-			</div>
+		</div>
 			
 			<div id="pageSix" data-role="page" data-theme="b">
 				<div data-role="header">
 					<h1>Form Page</h1>
 					<a href="#home"  data-icon="home" class="ui-button-left" >Home</a>
 				</div>
-<<<<<<< Updated upstream
-			
-			
-			<div data-role="content" style="height: 100%; overflow: visible;">
-			<form name="hiddenForm">
-				<select id="medicineList" name="medicineList[]" multiple="multiple">
-					<option value="1">Medicine1</option>
-					<option value="2">Medicine2</option>
-					<option value="3">Medicine3</option>
-					<option value="4">Medicine4</option>
-					<option value="5">Medicine5</option>
-					<option value="6">Medicine6</option>
-					<option value="7">Medicine7</option>
-					<option value="8">Medicine8</option>
-					<option value="9">Medicine9</option>
-					<option value="10">Medicine10</option>
-				</select>
-				<br />
-				
-=======
-
 
 			<div data-role="content">
 				<select id="medicineList">
 				</select>
 			</div>
 			
-
->>>>>>> Stashed changes
-				Meal:<input type="text" name="meal"><br>
+			Meal:<input type="text" name="meal"><br>
 				<!--<input type="radio" name="meal" value="Yes">Yes
 				<input type="radio" name="meal" value="No">No-->
 				<label for="flip-1">Has Eaten:</label>
